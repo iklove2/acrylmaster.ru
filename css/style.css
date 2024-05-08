@@ -133,7 +133,6 @@ legend {
 body {
     background-color: black;
     font-family: 'Raleway', sans-serif;
-    text-transform: capitalize;
     line-height: 1.4;
 }
 
@@ -152,10 +151,11 @@ header {
 } */
 
 .top {
+    color: #ff8335;
     max-width: 1540px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 20px;
+    padding: 20px 15px 0 15px;
     min-height: 80px;
     display: flex;
     justify-content: space-between;
@@ -178,6 +178,29 @@ header {
     width: 100px;
 }
 
+.top_nav_menu_burger {
+    display:none;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .top_nav_menu_burger > span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ff8335;
+    border-radius: 0px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+  
+
+
 .top>button {
     color: white;
     display: block;
@@ -187,11 +210,8 @@ header {
     height: 71px;
     margin-top: auto;
     margin-bottom: auto;
-    border-radius: 35px;
-    border-width: 2px;
-    border-style: double;
-    border-color: white;
-    background-color: brown;
+
+
 }
 
 .top_img_town_test {
@@ -207,11 +227,20 @@ header {
 }
 
 a.top_img_testbutton {
-    margin-top: auto;
-    margin-bottom: auto;
+    background: url(../pic/testdrivebutton.svg) no-repeat;
+    background-size: cover;
+    min-width: 240px;
+    min-height: 240px;
+    display: block;
 }
 
-a.top_img_testbutton>img {
+/*a.top_img_testbutton>img {
+    max-width: 240px;
+}*/
+
+a.top_img_testbutton:hover {
+    background: url(../pic/testdrivebuttonhover.svg) no-repeat;
+    background-size: cover;
     max-width: 240px;
 }
 
@@ -232,7 +261,7 @@ main {
     margin-right: auto;
     padding-top: 20px;
     min-height: 80px;
-    background-image: url(../pic/motorbackground.png);
+    /* background-image: url(../pic/motorbackground.png); */
     background-repeat: no-repeat;
     background-position-x: 515px;
     background-position-y: 200px;
@@ -257,32 +286,32 @@ main {
     /* Цвет текста */
 }
 
-.content_energy>h2 {
+.content_energy>h1 {
     max-width: 565px;
     text-transform: uppercase;
-    font-size: 120px;
+    font-size: 60px;
     font-weight: 900;
     /* font-family: 'Raleway', sans-serif; */
     color: white;
 }
 
 .content_energy_img {
-    margin-top: 50px;
-    margin-left: 215px;
+    padding-top: 50px;
+    padding-left: 215px;
 }
 
 .content_energy_p_text_left {
     margin-top: 0px;
     max-width: 500px;
     font-size: 24px;
-    font-weight: 400;
-    color: darkgray;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
 }
 
 .content_energy_p_text_right {
-    margin-top: 50px;
+    padding-top: 50px;
     text-transform: uppercase;
-    margin-left: auto;
+    padding-left: auto;
     max-width: 500px;
     font-size: 50px;
     font-weight: 900;
@@ -311,6 +340,16 @@ main {
     background-position-y: 660px;
 }
 
+.content_special_text>h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 42px;
+    padding-top: 90px;
+    padding-bottom: 40px;
+    background: url(../pic/Ellipse.webp) no-repeat;
+    background-position-x: 250px;
+}
+
 .content_special_text>h3 {
     text-transform: uppercase;
     font-weight: 900;
@@ -324,7 +363,8 @@ main {
 .content_special_text>p {
     font-size: 24px;
     margin-bottom: 100px;
-    color: darkgray;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
 }
 
 .content_special_text_footer {
@@ -344,4 +384,36 @@ main {
     background-image: url(../pic/specialfooterbefore.webp);
     top: -24px;
     left: -74px;
+}
+
+@media (min-width: 1281px) and (max-width: 1520px) 
+{
+    a.top_img_testbutton {
+        display: none;
+    }
+}
+
+@media (max-width: 1280px) {
+
+    .top_nav_menu_burger {
+        display:block;
+        margin-top: auto;
+    margin-bottom: auto;
+      }
+
+    header {
+        min-height: auto;
+    }
+    
+    nav {
+        display: none;
+    }
+
+    .top_img_motobyke {
+        display: none;
+    }
+
+    a.top_img_testbutton {
+        display: none;
+    }
 }
