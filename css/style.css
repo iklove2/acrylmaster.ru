@@ -330,6 +330,8 @@ main {
 .content_special_img {
     margin-left: auto;
     margin-right: auto;
+    width: 504px;
+    height: 803px;
 }
 
 .content_special>ul {
