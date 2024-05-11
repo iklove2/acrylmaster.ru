@@ -25,10 +25,9 @@
             <img src="pic/logotop.svg" alt="logotip">
             <nav>
                 <ul>
-                    <li>Наши продукты</li>
-                    <li>Почему мы</li>
-                    <li>Наши работы</li>
-                    <li>Контакты</li>
+                    <li>E-mail:<a href="mailto:akm@akmdigital.ru">akm@akmdigital.ru</a></li>
+                    <li><a href="tel:+78652588993">+7 (8652) 588993</a></li>
+                    <li>г. Ставрополь</li>
                 </ul>
             </nav>
             <button>
@@ -92,25 +91,17 @@
             pEl.textContent = dataElem.text;
 
             const imgEl = document.createElement('img');
+            imgEl.classList.add('content_energy_img_size');
+
             imgEl.src = dataElem.img;
             imgEl.alt = dataElem.title;
+            itemsEl.appendChild(liEl);
+            liEl.appendChild(imgDivliEl);
+            imgDivliEl.appendChild(imgEl);
+            liEl.appendChild(textDivliEl);
+            textDivliEl.appendChild(h2El);
+            textDivliEl.appendChild(pEl);
 
-            if (indexOfdataContent++ % 2 === 0) {
-                itemsEl.appendChild(liEl);
-                liEl.appendChild(textDivliEl);
-                textDivliEl.appendChild(h2El);
-                textDivliEl.appendChild(pEl);
-                liEl.appendChild(imgDivliEl);
-                imgDivliEl.appendChild(imgEl);
-
-            } else {
-                itemsEl.appendChild(liEl);
-                liEl.appendChild(imgDivliEl);
-                imgDivliEl.appendChild(imgEl);
-                liEl.appendChild(textDivliEl);
-                textDivliEl.appendChild(h2El);
-                textDivliEl.appendChild(pEl);
-            }
         });
 
     </script>

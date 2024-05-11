@@ -1,62 +1,32 @@
 const dataJson = `[
   { 
-    "img" : "img/page27/kc-1.webp",
-    "title" : "kc-1",
-    "text" : "3D Coffee Keychain Set",
-    "price" : 52
+    "img" : "img/orgglass/orgsteklo1.webp",
+    "title" : "Высокое качество продукции:",
+    "text" : "Стандарты качества у нас строгие на всех этапах производства – начиная с выбора сырья до контроля готовой продукции."
   },
   { 
-    "img" : "img/page27/kc-2.webp",
-    "title" : "kc-2",
-    "text" : "3D Coffee Keychain Set",
-    "price" : 24
+    "img" : "img/orgglass/orgsteklo2.webp",
+    "title" : "Индивидуальный подход к клиенту: ",
+    "text" : "Готовность адаптировать продукцию под специфические требования заказчика делает наше предложение максимально гибким."
   },
   { 
-    "img" : "img/page27/kc-3.webp",
-    "title" : "kc-3",
-    "text" : "3D Coffee Keychain Set",
-    "price" : 35
+    "img" : "img/orgglass/orgsteklo3.webp",
+    "title" : "Широкий ассортимент:",
+    "text" : "Учитывая потребности рынка, мы предлагаем оргстекло различной толщины и размера, а также способное выдерживать различные условия эксплуатации."
   },
   { 
-    "img" : "img/page27/kc-4.webp",
-    "title" : "kc-4",
-    "text" : "3D Coffee Keychain Set",
-    "price" : 78
+    "img" : "img/orgglass/orgsteklo4.webp",
+    "title" : "Инновационность:",
+    "text" : "Мы постоянно работаем над совершенствованием технологического процесса. Наша компания активно занимается разработкой и поиском новых идей, для повышения функциональных характеристик производимых изделий."
   },
   { 
-    "img" : "img/page27/kc-5.webp",
-    "title" : "kc-5",
-    "text" : "3D Coffee Keychain Set",
-    "price" : 21
+    "img" : "img/orgglass/orgsteklo5.webp",
+    "title" : "Экологичность:",
+    "text" : "Мы осознаём ответственность перед окружающей средой и стремимся минимизировать экологический след от нашего производства."
   },
   { 
-    "img" : "img/page27/kc-6.webp",
-    "title" : "kc-6",
-    "text" : "3D Coffee Keychain Set",
-    "price" : 76
-  },
-  { 
-    "img" : "img/page27/kc-7.webp",
-    "title" : "kc-7",
-    "text" : "3D Coffee Keychain Set",
-    "price" : 54
-  },  
-  { 
-    "img" : "img/page27/kc-8.webp",
-    "title" : "kc-8",
-    "text" : "3D Coffee Keychain Set",
-    "price" : 21
-  },
-  { 
-    "img" : "img/page27/kc-9.webp",
-    "title" : "kc-9",
-    "text" : "3D Coffee Keychain Set",
-    "price" : 76
-  },
-  { 
-    "img" : "img/page27/kc-10.webp",
-    "title" : "kc-10",
-    "text" : "3D Coffee Keychain Set",
-    "price" : 54
+    "img" : "img/orgglass/orgsteklo6.webp",
+    "title" : "Универсальность",
+    "text" : "Наше оргстекло подходит как для интерьерных решений, так и для внешнего применения."
   }
 ]`

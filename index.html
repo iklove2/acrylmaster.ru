@@ -25,10 +25,9 @@
             <img src="pic/logotop.svg" alt="logotip">
             <nav>
                 <ul>
-                    <li>Наши продукты</li>
-                    <li>Почему мы</li>
-                    <li>Наши работы</li>
-                    <li>Контакты</li>
+                    <li>E-mail:<a href="mailto:akm@akmdigital.ru">akm@akmdigital.ru</a></li>
+                    <li><a href="tel:+78652588993">+7 (8652) 588993</a></li>
+                    <li>г. Ставрополь</li>
                 </ul>
             </nav>
             <button>
@@ -47,8 +46,9 @@
                 <span class="content_energy_kontur_text">из пластика</span>
                 и оргстекла
             </h1>
-            <img src="pic/motomainimg.webp" alt="motobyke" class="content_energy_img">
-
+            <div class="content_energy_img">
+                <img src="pic/motomainimg.webp" alt="orgglass" class="content_energy_img_size">
+            </div>
             <p class="content_energy_p_text_left">
                 "Оргалит Плюс" - ваш надежный поставщик качественного оргстекла. Мы предлагаем широкий ассортимент
                 продукции для самых разнообразных нужд – от промышленного производства до домашнего декора.
@@ -92,25 +92,17 @@
             pEl.textContent = dataElem.text;
 
             const imgEl = document.createElement('img');
+            imgEl.classList.add('content_energy_img_size');
+
             imgEl.src = dataElem.img;
             imgEl.alt = dataElem.title;
+            itemsEl.appendChild(liEl);
+            liEl.appendChild(imgDivliEl);
+            imgDivliEl.appendChild(imgEl);
+            liEl.appendChild(textDivliEl);
+            textDivliEl.appendChild(h2El);
+            textDivliEl.appendChild(pEl);
 
-            if (indexOfdataContent++ % 2 === 0) {
-                itemsEl.appendChild(liEl);
-                liEl.appendChild(textDivliEl);
-                textDivliEl.appendChild(h2El);
-                textDivliEl.appendChild(pEl);
-                liEl.appendChild(imgDivliEl);
-                imgDivliEl.appendChild(imgEl);
-
-            } else {
-                itemsEl.appendChild(liEl);
-                liEl.appendChild(imgDivliEl);
-                imgDivliEl.appendChild(imgEl);
-                liEl.appendChild(textDivliEl);
-                textDivliEl.appendChild(h2El);
-                textDivliEl.appendChild(pEl);
-            }
         });
 
     </script>
